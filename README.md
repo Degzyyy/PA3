@@ -61,3 +61,68 @@ Last five rows of cars:
 30  Ferrari Dino  19.7  6  145  175  3.62  2.770  15.5   0  1  5  6
 31  Maserati Bora  15.0  8  301  335  3.54  3.570  14.6   0  1  5  8
 ```
+
+# 📌 Problem 2: Subsetting, Slicing, and Indexing
+
+This problem uses the same DataFrame cars from Problem 1 and extracts specific data using subsetting, slicing, and indexing.
+
+Steps:
+
+a. Display the first five rows with odd-numbered columns (1, 3, 5, 7...).
+b. Display the row that contains the model Mazda RX4.
+c. Find how many cylinders (cyl) the model Camaro Z28 has.
+d. Show the cylinders and gear type of Mazda RX4 Wag, Ford Pantera L, and Honda Civic.
+
+---
+
+## ✅ Input:
+```
+# PA 3 – Problem 2: Subsetting, Slicing, Indexing
+
+# a. First five rows with odd-numbered columns
+print("First five rows with odd-numbered columns:")
+print(cars.iloc[:5, 1::2])
+
+# b. Row containing Mazda RX4
+print("\nRow containing Mazda RX4:")
+print(cars[cars['Model'] == 'Mazda RX4'])
+
+# c. Cylinders of Camaro Z28
+print("\nNumber of cylinders in Camaro Z28:")
+print(cars[cars['Model'] == 'Camaro Z28']['cyl'].values[0])
+
+# d. Cylinders and gear type of specific models
+print("\nCylinders and gear type of Mazda RX4 Wag, Ford Pantera L, and Honda Civic:")
+print(cars[cars['Model'].isin(['Mazda RX4 Wag', 'Ford Pantera L', 'Honda Civic'])][['cyl', 'gear']])
+```
+
+## ✅ Output:
+```
+First five rows with odd-numbered columns:
+    mpg   drat     wt  am  carb
+0  21.0   3.90  2.620   1     4
+1  21.0   3.90  2.875   1     4
+2  22.8   3.85  2.320   1     1
+3  21.4   3.08  3.215   0     1
+4  18.7   3.15  3.440   0     2
+
+Row containing Mazda RX4:
+      Model   mpg  cyl  disp   hp  drat    wt   qsec  vs  am  gear  carb
+0  Mazda RX4  21.0    6   160  110  3.90  2.620  16.46   0   1     4     4
+
+Number of cylinders in Camaro Z28:
+8
+
+Cylinders and gear type of Mazda RX4 Wag, Ford Pantera L, and Honda Civic:
+    cyl  gear
+1     6     4
+29    8     5
+18    4     4
+```
+# 🛠 Software(s) Used
+<p align="left"> <img src="https://www.python.org/static/community_logos/python-logo.png" alt="Python Logo" width="120"/> <img src="https://jupyter.org/assets/homepage/main-logo.svg" alt="Jupyter Logo" width="90"/> </p>
+📂 Repository Information
+
+# Languages Used:
+
+Python (100%)
