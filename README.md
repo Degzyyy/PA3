@@ -10,7 +10,6 @@
 
 - **V1.0 (09-12-24)** – Initial Release and Submission of GitHub Link  
 - **V1.1 (09-13-24)** – Added README Documentation for Problems  
-- **V1.2 (09-14-24)** – Added Code Snippets and Outputs in README  
 
 ---
 
