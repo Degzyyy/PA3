@@ -43,7 +43,8 @@ print(cars.head())
 print("\nLast five rows of cars:")
 print(cars.tail())
 ```
-
+## ✅ Output:  
+```
 First five rows of cars:
         Model   mpg  cyl  disp   hp  drat     wt  qsec  vs  am  gear  carb
 0   Mazda RX4  21.0    6   160  110  3.90  2.620  16.46   0   1     4     4
@@ -59,3 +60,4 @@ Last five rows of cars:
 29  Ford Pantera L  15.8  8  351  264  4.22  3.170  14.5   0  1  5  4
 30  Ferrari Dino  19.7  6  145  175  3.62  2.770  15.5   0  1  5  6
 31  Maserati Bora  15.0  8  301  335  3.54  3.570  14.6   0  1  5  8
+```
